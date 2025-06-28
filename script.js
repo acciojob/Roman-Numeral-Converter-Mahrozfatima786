@@ -8,8 +8,6 @@ function convertToRoman(num) {
       5:['V', 5], 
       6:['I', 1]
     };
-
-	
   let result = '';
 
   for (let [symbol, value] of romanNumerals) {
@@ -18,15 +16,7 @@ function convertToRoman(num) {
       num -= value;
     }
   }
-
   return result;
 }
-// You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
-
 console.log(convertToRoman(14));
-
-
-
-
-// do not edit below this line
 module.exports = convertToRoman
