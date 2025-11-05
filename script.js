@@ -30,3 +30,10 @@ function convertToRoman(num) {
 }
 
 window.convertToRoman = convertToRoman;
+
+// DOM interaction for UI
+document.getElementById("convertBtn").addEventListener("click", function () {
+  const input = document.getElementById("numberInput").value;
+  const roman = convertToRoman(parseInt(input));
+  document.getElementById("romanOutput").textContent = roman || "N/A";
+});
